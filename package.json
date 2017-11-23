@@ -1,0 +1,26 @@
+{
+  "name": "badoo-email-proxy",
+  "version": "1.0.0",
+  "description": "Badoo scripts for email for mockup app",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://git.heroku.com/damp-depths-95552.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "keywords": [
+    "js",
+    "nodeJS"
+  ],
+  "author": "iGrekov",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cors": "^2.8.1",
+    "express": "^4.15.4",
+    "nodemailer": "^4.3.0"
+  }
+}
