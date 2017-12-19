@@ -18,4 +18,4 @@ Simply follow these steps:
 
 ## Credits
 
-This project is created for boilerplate reasonss, so feel free to use or modify this tpl in your work. :thumbsup:
+This project is created for boilerplate reasons, so feel free to use or modify this tpl in your work. :thumbsup:
