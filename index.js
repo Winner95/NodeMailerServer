@@ -46,8 +46,8 @@ app.post('/sendEmail', function(req, res){
         to: recepients,
         bcc: hiddenRecepients,
         subject: subject + emailContent.position,
-        text: 'Имя: ' + emailContent.name + '\n Мобильный: ' + emailContent.phone + ' \n e-mail: ' + emailContent.email,
-        html: '<b>Имя:</b> ' + emailContent.name +  '<br> <b>Мобильный:</b> ' + emailContent.phone +  '<br> <b>e-mail:</b> ' + emailContent.email
+        text: 'Имя: ' + emailContent.name + '\n Текущая должность:' + emailContent.position + '\n Мобильный: ' + emailContent.phone + ' \n e-mail: ' + emailContent.email,
+        html: '<b>Имя:</b> ' + emailContent.name + '<br> <b> Текущая должность:</b>' + emailContent.position + '<br> <b>Мобильный:</b> ' + emailContent.phone +  '<br> <b>e-mail:</b> ' + emailContent.email
     };
 
     // console.log(JSON.stringify(mailOptions));
