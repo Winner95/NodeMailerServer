@@ -41,10 +41,6 @@ app.post('/sendEmail', function(req, res){
 
     var emailContent = req.body;
 
-    if(emailContent.position === "Senior Data Scientist - Machine Learning") {
-        subject = 'test';
-    }
-
     var mailOptions = {
         from: '<' + user + '>' + emailContent.name,
         to: recepients,
