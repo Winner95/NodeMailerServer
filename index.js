@@ -41,13 +41,17 @@ app.post('/sendEmail', function(req, res){
 
     var emailContent = req.body;
 
+    if(emailContent.position === "Senior Data Scientist - Machine Learning") {
+        subject = 'test';
+    }
+
     var mailOptions = {
         from: '<' + user + '>' + emailContent.name,
         to: recepients,
         bcc: hiddenRecepients,
         subject: subject + emailContent.position,
-        text: 'Имя: ' + emailContent.name + '\n Текущая должность:' + emailContent.currentOccupation + '\n Мобильный: ' + emailContent.phone + ' \n e-mail: ' + emailContent.email,
-        html: '<b>Имя:</b> ' + emailContent.name + '<br> <b> Текущая должность:</b>' + emailContent.currentOccupation + '<br> <b>Мобильный:</b> ' + emailContent.phone +  '<br> <b>e-mail:</b> ' + emailContent.email
+        text: 'Full Name: ' + emailContent.name + '\n Current position:' + emailContent.currentOccupation + '\n Phone: ' + emailContent.phone + ' \n e-mail: ' + emailContent.email,
+        html: '<b>Full Name:</b> ' + emailContent.name + '<br> <b> Current position:</b>' + emailContent.currentOccupation + '<br> <b>Phone:</b> ' + emailContent.phone +  '<br> <b>e-mail:</b> ' + emailContent.email
     };
 
     // console.log(JSON.stringify(mailOptions));
